@@ -1,0 +1,33 @@
+h1 {
+    font-size: 108px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    background: -webkit-repeating-linear-gradient(yellow,red,blue);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    margin-top: 0px;
+    margin-bottom: 100px;
+    }
+    
+header {
+    background: url("https://i.pinimg.com/originals/7f/d0/35/7fd0358c17dececb4c93586f6c841d9a.jpg");
+    background-size: 200px 100%;
+    
+    }
+
+main {
+    display: flex;
+    justify-content: space-around;
+}
+
+#Multi {
+    flex: 1 1 auto;
+}
+
+#Single {
+    flex: 1 1 auto;
+}
+
+nav {
+    
+}
