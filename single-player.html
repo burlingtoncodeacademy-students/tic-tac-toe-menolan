@@ -4,16 +4,38 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Single Player</title>
-  <link rel="stylesheet" href="styles.css"/>
+  <title>Single Player</title>  <!--Title of the page that the browser tab will show-->
+  <link rel="stylesheet" href="styles.css"/>  <!--Linking to the CSS stylesheet-->
 </head>
 <body>
   <a href="index.html">
-    <header><h1>Tic Tac Sonic</h1></header>
+    <header><h1>Tic Tac Sonic</h1></header>   <!--Header and title that contain a link to the landing page-->
   </a>
-  <nav>
+  <nav>  <!--Setting up the basic nav bar-->
     <button><a id="home" href="/">Home</a></button>
     <button><a id="multiplayer" href="/multi-player.html">Multi Player</a></button>
   </nav>
+  <div id="game">  <!--setting up the grid and game-->
+    <div id="grid">
+      <div class="cell" id="topleft"></div>
+      <div class="cell" id="topmid"></div>
+      <div class="cell" id="topright"></div>
+      <div class="cell" id="midleft"></div>
+      <div class="cell" id="mid"></div>
+      <div class="cell" id="midright"></div>
+      <div class="cell" id="botleft"></div>
+      <div class="cell" id="botmid"></div>
+      <div class="cell" id="botright"></div>
+    </div>
+    <div id="controls">  <!--game buttons setup-->
+      <button id="start">Start</button>
+      <button id="reset">Reset</button>
+      <button id="replay">Replay</button>
+    </div>
+  </div>
+  <footer>Doctor Ivo "Eggman" Robotnik <br>
+  Dr. Robotnik's Lair, Seaside Island <br>
+email: robotnikrules@sonicsucks.com <br>
+Tic Tac Sonic is a registered trademark of Robotnik Industries</footer>
 </body>
 </html>
