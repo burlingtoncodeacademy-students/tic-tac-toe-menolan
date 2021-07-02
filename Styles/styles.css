@@ -6,8 +6,11 @@ h1 {
     background: -webkit-repeating-linear-gradient(#F1B000,#FF1400,#0D7ADF);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        margin-top: 65px;
-        
+        margin-top: 80px;  
+    }
+
+    #tic {
+        text-decoration: none;
     }
 /*Header design for each page*/
 header {
@@ -74,6 +77,14 @@ button a {
     color: #FF1400;
     font-weight: bold;
 }
+
+/* Status area styling */
+#status {
+    text-align: center;
+    font-size: 76px;
+    color: #0D7ADF;
+}
+
 /* Styling the game pages */
 #game {
     display: flex;
@@ -147,6 +158,7 @@ button {
 /* Footer styling, also basic for now */
 footer {
 margin-top: 10vh;
+margin-bottom: 0px;
 background-color: #F1B000;
 color: #FF1400;
 }
