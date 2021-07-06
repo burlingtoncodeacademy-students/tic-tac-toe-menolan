@@ -1,3 +1,10 @@
+//player variables
+let player1 = "Sonic";
+let player2 = "Ring";
+let currentPlayer = player1;
+
+//array for keeping track of game state
+let gameState = ["","","","","","","","",""]
 //getting clock element and setting count to zero for the timer
 let clock = document.getElementById("clock");
 let count = 0;
@@ -15,29 +22,32 @@ startButton.addEventListener("click", (event) => {
   //when start is clicked the timer starts and the game is enabled
   game();
 });
-//Making individual cells on the board clickable and adding events
 
 //game function called by clicking start
 function game() {
   //start the game and prompt Player X (Sonic) to go!
-  status.textContent = `Sonic's turn`;
+  status.textContent = currentPlayer;
   //disable the start button
   startButton.disabled = true;
-  //enabling clicking in the cells
+  //bring in the cells!
   let cells = document.getElementsByClassName("cell");
 
-  //not working to change turns
-  if (status.textContent === `Sonic's turn`) {
-    //itterating over new HTML collection
-    for (let cell of cells) {
-      cell.addEventListener("click", (event) => {
+  //itterating over new HTML collection
+  for (let cell of cells) {
+    //Making individual cells on the board clickable and adding event listeners
+    cell.addEventListener("click", (event) => {
+      //changing turns and filling a cell with the image of who's turn it is
+      if (currentPlayer === player1) {
         event.target.style.backgroundImage = "url('/Images/Sonic_X.png')";
-        status.textContent = "Ring's turn";
-      });
-    }
+        currentPlayer = player2;
+        status.textContent = currentPlayer;
+      } else if (currentPlayer === player2) {
+        event.target.style.backgroundImage = "url('/Images/Sonic_ring.png')";
+        currentPlayer = player1;
+        status.textContent = currentPlayer;
+      }
+    });
   }
-//figure this out next
-
 
   let counter = setInterval(tick, 1);
   //timer function

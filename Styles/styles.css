@@ -120,38 +120,38 @@ button {
     border: 2px solid #0D7ADF;
 }
 
-#topleft {
+#cell0 {
     border-left: none;
     border-top: none;
 }
 
-#topmid {
+#cell1 {
     border-top: none;
 }
 
-#topright {
+#cell2 {
     border-top: none;
     border-right: none;
 }
 
-#midleft {
+#cell3 {
     border-left: none;
 }
 
-#midright {
+#cell5 {
     border-right: none;
 }
 
-#botleft {
+#cell6 {
     border-left: none;
     border-bottom: none;
 }
 
-#botmid {
+#cell7 {
     border-bottom: none;
 }
 
-#botright {
+#cell8 {
     border-bottom: none;
     border-right: none;
 }
