@@ -1,42 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Single Player</title>  <!--Title of the page that the browser tab will show-->
-  <link rel="stylesheet" href="Styles/styles.css"/>  <!--Linking to the CSS stylesheet-->
-</head>
-<body>
-  <a id="tic" href="index.html">
-    <header><h1 id="tac">Tic Tac Sonic</h1></header>   <!--Header and title that contain a link to the landing page-->
-  </a>
-  <nav>  <!--Setting up the basic nav bar-->
-    <button><a id="home" href="/">Home</a></button>
-    <button><a id="multiplayer" href="/multi-player.html">Multi Player</a></button>
-  </nav>
-  <div id="game">  <!--setting up the grid and game-->
-    <div id="grid">
-      <div class="cell" id="cell0"></div>
-      <div class="cell" id="cell1"></div>
-      <div class="cell" id="cell2"></div>
-      <div class="cell" id="cell3"></div>
-      <div class="cell" id="cell4"></div>
-      <div class="cell" id="cell5"></div>
-      <div class="cell" id="cell6"></div>
-      <div class="cell" id="cell7"></div>
-      <div class="cell" id="cell8"></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Single Player</title>
+    <!--Title of the page that the browser tab will show-->
+    <link rel="stylesheet" href="Styles/styles.css" />
+    <!--Linking to the CSS stylesheet-->
+  </head>
+  <body>
+    <a id="tic" href="index.html">
+      <header><h1 id="tac">Tic Tac Sonic</h1></header>
+      <!--Header and title that contain a link to the landing page-->
+    </a>
+    <nav>
+      <!--Setting up the basic nav bar-->
+      <button><a id="home" href="/">Home</a></button>
+      <button>
+        <a id="multiplayer" href="/multi-player.html">Multi Player</a>
+      </button>
+    </nav>
+    <div id="game">
+      <!--setting up the grid and game-->
+      <div id="grid">
+        <div class="cell" id="cell0"></div>
+        <div class="cell" id="cell1"></div>
+        <div class="cell" id="cell2"></div>
+        <div class="cell" id="cell3"></div>
+        <div class="cell" id="cell4"></div>
+        <div class="cell" id="cell5"></div>
+        <div class="cell" id="cell6"></div>
+        <div class="cell" id="cell7"></div>
+        <div class="cell" id="cell8"></div>
+      </div>
+      <div id="controls">
+        <!--game buttons setup-->
+        <button id="start">Start</button>
+        <button id="reset">Reset</button>
+        <button id="replay">Replay</button>
+      </div>
     </div>
-    <div id="controls">  <!--game buttons setup-->
-      <button id="start">Start</button>
-      <button id="reset">Reset</button>
-      <button id="replay">Replay</button>
-    </div>
-  </div>
-  <footer>Doctor Ivo "Eggman" Robotnik <br>
-  Dr. Robotnik's Lair, Seaside Island <br>
-email: robotnikrules@sonicsucks.com <br>
-Tic Tac Sonic is a registered trademark of Robotnik Industries</footer>
-<script src="Scripts/index.js" />
-</body>
+    <footer>
+      Doctor Ivo "Eggman" Robotnik <br />
+      Dr. Robotnik's Lair, Seaside Island <br />
+      email: robotnikrules@sonicsucks.com <br />
+      Tic Tac Sonic is a registered trademark of Robotnik Industries
+    </footer>
+    <script src="Scripts/index.js" />
+  </body>
 </html>
