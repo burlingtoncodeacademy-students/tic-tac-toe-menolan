@@ -84,7 +84,7 @@ function game() {
     });
   }
 
-  let counter = setInterval(tick, 1);
+  let counter = setInterval(tick, 1000);
   //timer function
   function tick() {
     let hours = Math.floor(count / 3600);
@@ -92,9 +92,7 @@ function game() {
     let seconds = count % 60;
     count = count + 1;
     clock.textContent = `Time elapsed 0${hours}:0${minutes}:0${seconds}`;
-    if (count > 3800) {
-      clearInterval(counter);
-    }
+    
     if (seconds >= 10) {
       clock.textContent = `Time elapsed 0${hours}:0${minutes}:${seconds}`;
     }
