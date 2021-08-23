@@ -21,6 +21,8 @@
         <a id="single" href="/single-player.html">Single Player</a>
       </button>
     </nav>
+    <!-- Game type header (single or multi player) -->
+    <h1 id="players">Multi Player</h1>
     <!-------Setting turn status notification------->
     <div id="status"></div>
     <!----Form for entering player names---not working how I want----->
@@ -48,9 +50,10 @@
       <!-------game buttons setup------->
       <div id="controls">
         <button id="start">Start</button>
-        <button id="reset">Reset</button>
-        <button id="replay">Replay</button>
+        <button id="reset" disabled="true">Reset</button>
+        <button id="replay" disabled="true">Replay</button>
       </div>
+      <!-- Keeping track of gametime -->
       <div id="clock"></div>
     </div>
     <footer>

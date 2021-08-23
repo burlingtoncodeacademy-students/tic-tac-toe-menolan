@@ -74,6 +74,13 @@ button a {
   color: #ff1400;
   font-weight: bold;
 }
+
+/* Headers for number of players */
+#players {
+  text-align: center;
+  color: #0d7adf;
+}
+
 /* Player names input area */
 #playerNames {
   text-align: center;
@@ -163,6 +170,7 @@ footer {
   background-color: #f1b000;
   color: #ff1400;
 }
+
 /*trying to make a flashing animation for the winning scenario */
 .flash {
   color: #fff;
