@@ -1,0 +1,197 @@
+/*Tic Tac Sonic title styling*/
+h1 {
+  font-size: 108px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  text-align: center;
+  background: -webkit-repeating-linear-gradient(#f1b000, #ff1400, #0d7adf);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 80px;
+}
+
+#tic {
+  text-decoration: none;
+}
+/*Header design for each page*/
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("https://i.pinimg.com/originals/7f/d0/35/7fd0358c17dececb4c93586f6c841d9a.jpg");
+  background-size: 200px 107%;
+  height: 20vh;
+  margin-top: 0px;
+}
+/* The landing page's two image links as a flexbox, still working out some formatting to get them exactly how I want*/
+main {
+  display: flex;
+  justify-content: space-around;
+}
+/*Setting the background color of the whole site in the color of Tails (the best Sonic character's) fur*/
+* {
+  background-color: #ffe6be;
+}
+/* Multi player link and title styling*/
+#multilink {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ff1400;
+}
+/* Setting size of images*/
+main img {
+  height: 50vh;
+}
+/* Single player link styling, had to mess with this for awhile with help from Olivia, still not quite finished*/
+#singlelink a {
+  width: 80%;
+  overflow: hidden;
+}
+
+#singlelink img {
+  position: absolute;
+  left: 60%;
+}
+
+#singlelink {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ff1400;
+}
+/* Nav bar styling, basic for now */
+nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: #ff1400;
+  margin-top: 0px;
+}
+/*Styling buttons that are a link */
+button a {
+  background-color: #0d7adf;
+  text-decoration: none;
+  color: #ff1400;
+  font-weight: bold;
+}
+
+/* Headers for number of players */
+#players {
+  text-align: center;
+  color: #0d7adf;
+}
+
+/* Player names input area */
+#playerNames {
+  text-align: center;
+  color: #0d7adf;
+}
+/* Status area styling */
+#status {
+  text-align: center;
+  font-size: 76px;
+  color: #0d7adf;
+}
+
+/* Styling the game pages */
+#game {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+/* Flexbox for the game buttons */
+#controls {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 20vw;
+  margin-right: 20vw;
+}
+/* Styling for buttons that aren't links */
+button {
+  background-color: #0d7adf;
+  text-decoration: none;
+  color: #ff1400;
+}
+/* Setting up the board with a grid, further down I remove borders to make it look like a tic-tac-toe board */
+#grid {
+  display: grid;
+  margin-left: 20vw;
+  margin-right: 20vw;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  justify-content: center;
+  grid-template-columns: 150px 150px 150px;
+  grid-template-rows: 150px 150px 150px;
+}
+/* Border setup for the 9 cells, and then removing the specific borders for each cell to make the board */
+.cell {
+  border: 2px solid #0d7adf;
+}
+
+#cell0 {
+  border-left: none;
+  border-top: none;
+}
+
+#cell1 {
+  border-top: none;
+}
+
+#cell2 {
+  border-top: none;
+  border-right: none;
+}
+
+#cell3 {
+  border-left: none;
+}
+
+#cell5 {
+  border-right: none;
+}
+
+#cell6 {
+  border-left: none;
+  border-bottom: none;
+}
+
+#cell7 {
+  border-bottom: none;
+}
+
+#cell8 {
+  border-bottom: none;
+  border-right: none;
+}
+/* Footer styling, also basic for now */
+footer {
+  margin-top: 10vh;
+  margin-bottom: 0px;
+  background-color: #f1b000;
+  color: #ff1400;
+}
+
+/*trying to make a flashing animation for the winning scenario */
+.flash {
+  color: #fff;
+  padding: 10px;
+  animation: blinkingBackground 3s infinite;
+}
+
+@keyframes blinkingBackground {
+  0% {
+    background-color: #0d7adf;
+  }
+  25% {
+    background-color: #f1b000;
+  }
+  50% {
+    background-color: #ff1400;
+  }
+  75% {
+    background-color: #c9008c;
+  }
+  100% {
+    background-color: #39a400;
+  }
+}

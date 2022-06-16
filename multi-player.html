@@ -1,12 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Multi Player</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multi Player</title>
+    <!--Title of the page that the browser tab will show-->
+    <link rel="stylesheet" href="Styles/styles.css" />
+    <!--Linking to the CSS stylesheet-->
+  </head>
+  <body>
+    <a id="tic" href="index.html">
+      <header><h1 id="tac">Tic Tac Sonic</h1></header>
+      <!--Header and title that contain a link to the landing page-->
+    </a>
+    <nav>
+      <!--Setting up the basic nav bar-->
+      <button><a id="home" href="/">Home</a></button>
+      <button>
+        <a id="single" href="/single-player.html">Single Player</a>
+      </button>
+    </nav>
+    <!-- Game type header (single or multi player) -->
+    <h1 id="players">Multi Player</h1>
+    <!-------Setting turn status notification------->
+    <div id="status"></div>
+    <!----Form for entering player names---not working how I want----->
+    <div id="names">
+      <form action="" id="playerNames">
+        <label for="player1">Player One:</label>
+        <input type="text" name="player1" id="player1" />
+        <label for="player2">Player Two:</label>
+        <input type="text" name="player2" id="player2" />
+      </form>
+    </div>
+    <!-------setting up the grid and game------->
+    <div id="game">
+      <div id="grid">
+        <div class="cell" id="cell0" data-index-number="0"></div>
+        <div class="cell" id="cell1" data-index-number="1"></div>
+        <div class="cell" id="cell2" data-index-number="2"></div>
+        <div class="cell" id="cell3" data-index-number="3"></div>
+        <div class="cell" id="cell4" data-index-number="4"></div>
+        <div class="cell" id="cell5" data-index-number="5"></div>
+        <div class="cell" id="cell6" data-index-number="6"></div>
+        <div class="cell" id="cell7" data-index-number="7"></div>
+        <div class="cell" id="cell8" data-index-number="8"></div>
+      </div>
+      <!-------game buttons setup------->
+      <div id="controls">
+        <button id="start">Start</button>
+        <button id="reset" disabled="true">Reset</button>
+        <button id="replay" disabled="true">Replay</button>
+      </div>
+      <!-- Keeping track of gametime -->
+      <div id="clock"></div>
+    </div>
+    <footer>
+      Doctor Ivo "Eggman" Robotnik <br />
+      Dr. Robotnik's Lair, Seaside Island <br />
+      email: robotnikrules@sonicsucks.com <br />
+      Tic Tac Sonic is a registered trademark of Robotnik Industries
+    </footer>
+    <script src="Scripts/index.js" />
+    >
+  </body>
 </html>
